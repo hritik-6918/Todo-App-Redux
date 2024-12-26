@@ -1,70 +1,71 @@
-# GitHub Codespaces ♥️ React
+# Redux To-Do List App
 
-Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
+This project is a simple to-do list application built with React and Redux. Users can add tasks, mark them as complete, edit them, and delete them. The state management for the application is handled using Redux.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+## Features
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+- Add new tasks to the list.
+- Mark tasks as complete/incomplete using checkboxes.
+- Edit existing tasks.
+- Remove tasks from the list.
+- State management powered by Redux Toolkit.
 
-This project was bootstrapped for you with [Vite](https://vitejs.dev/).
+## Prerequisites
 
-## Available Scripts
+Before you begin, ensure you have the following installed on your system:
 
-In the project directory, you can run:
+- [Node.js](https://nodejs.org/) (v14 or above)
+- [npm](https://www.npmjs.com/) (v6 or above)
 
-### `npm start`
+## Getting Started
 
-We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
+Follow these steps to set up and run the project locally.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000/](http://localhost:3000/) in the built-in Simple Browser (`Cmd/Ctrl + Shift + P > Simple Browser: Show`) to view your running application.
+### Step 1: Clone the Repository
 
-The page will reload automatically when you make changes.\
-You may also see any lint errors in the console.
+```bash
+$ git clone https://github.com/yourusername/redux-todo-app.git
+$ cd redux-todo-app
+```
 
-### `npm test`
+### Step 2: Install Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install the required dependencies by running:
 
-### `npm run build`
+```bash
+$ npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Step 3: Start the Application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To start the development server, use the following command:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+$ npm start
+```
 
-## Learn More
+The application will open in your default web browser at `http://localhost:3000`.
 
-You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
+## File Structure
 
-To learn Vitest, a Vite-native testing framework, go to [Vitest documentation](https://vitest.dev/guide/)
+- **src/app/store.js**: Configures the Redux store.
+- **src/features/todoSlice.js**: Contains the Redux slice for managing to-do tasks.
+- **src/App.js**: Main component that renders the to-do list and handles user interactions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+1. Enter a task in the input field and click "Add Task" to add it to the list.
+2. Mark a task as complete or incomplete using the checkbox.
+3. Click "Edit" next to a task to modify it. Save or cancel your changes.
+4. Click "Remove" to delete a task from the list.
 
-This section has moved here: [https://sambitsahoo.com/blog/vite-code-splitting-that-works.html](https://sambitsahoo.com/blog/vite-code-splitting-that-works.html)
+## Technologies Used
 
-### Analyzing the Bundle Size
+- **React**: For building the user interface.
+- **Redux Toolkit**: For state management.
+- **JavaScript (ES6)**: For scripting.
+- **HTML5 & CSS3**: For styling.
 
-This section has moved here: [https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer)
+## Contributing
 
-### Making a Progressive Web App
-
-This section has moved here: [https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf](https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf)
-
-### Advanced Configuration
-
-This section has moved here: [https://vitejs.dev/guide/build.html#advanced-base-options](https://vitejs.dev/guide/build.html#advanced-base-options)
-
-### Deployment
-
-This section has moved here: [https://vitejs.dev/guide/build.html](https://vitejs.dev/guide/build.html)
-
-### Troubleshooting
-
-This section has moved here: [https://vitejs.dev/guide/troubleshooting.html](https://vitejs.dev/guide/troubleshooting.html)
+Contributions are welcome! If you find any issues or have ideas for new features, feel free to open an issue or create a pull request.
